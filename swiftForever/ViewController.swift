@@ -24,7 +24,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        var a = 55
+        var a = 33
+        
         super.viewDidLoad()
         view.backgroundColor = .red
         view.addSubview(tableview)
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activate(constraints)
         
-        dene()
+       
     }
 }
 extension ViewController:UITableViewDelegate, UITableViewDataSource{
