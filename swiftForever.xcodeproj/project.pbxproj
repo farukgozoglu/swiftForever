@@ -13,6 +13,7 @@
 		FB80D8B422B60B9300E8FE5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB80D8B222B60B9300E8FE5F /* Main.storyboard */; };
 		FB80D8B622B60B9600E8FE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB80D8B522B60B9600E8FE5F /* Assets.xcassets */; };
 		FB80D8B922B60B9600E8FE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB80D8B722B60B9600E8FE5F /* LaunchScreen.storyboard */; };
+		FB80D8C122B6305900E8FE5F /* deneme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8C022B6305900E8FE5F /* deneme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FB80D8B522B60B9600E8FE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB80D8B822B60B9600E8FE5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB80D8BA22B60B9600E8FE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB80D8C022B6305900E8FE5F /* deneme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deneme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */,
 				FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */,
 				FB80D8B022B60B9300E8FE5F /* ViewController.swift */,
+				FB80D8C022B6305900E8FE5F /* deneme.swift */,
 				FB80D8B222B60B9300E8FE5F /* Main.storyboard */,
 				FB80D8B522B60B9600E8FE5F /* Assets.xcassets */,
 				FB80D8B722B60B9600E8FE5F /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */,
+				FB80D8C122B6305900E8FE5F /* deneme.swift in Sources */,
 				FB80D8AD22B60B9300E8FE5F /* AppDelegate.swift in Sources */,
 				FB80D8AF22B60B9300E8FE5F /* SceneDelegate.swift in Sources */,
 			);
