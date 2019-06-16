@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     }()
 
     override func viewDidLoad() {
+        
+        var a = 44
         super.viewDidLoad()
         view.backgroundColor = .red
         view.addSubview(tableview)
