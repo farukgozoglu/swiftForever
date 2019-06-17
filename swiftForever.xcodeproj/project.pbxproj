@@ -10,6 +10,7 @@
 		FB677CC922B71E49000960F8 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CC822B71E49000960F8 /* UIKit.swift */; };
 		FB677CCB22B71E6B000960F8 /* UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCA22B71E6B000960F8 /* UIcolor.swift */; };
 		FB677CCD22B73EBA000960F8 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCC22B73EBA000960F8 /* TableHeaderView.swift */; };
+		FB677CCF22B77B1B000960F8 /* bottomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCE22B77B1B000960F8 /* bottomBox.swift */; };
 		FB80D8AD22B60B9300E8FE5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */; };
 		FB80D8AF22B60B9300E8FE5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */; };
 		FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8B022B60B9300E8FE5F /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		FB677CC822B71E49000960F8 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
 		FB677CCA22B71E6B000960F8 /* UIcolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIcolor.swift; sourceTree = "<group>"; };
 		FB677CCC22B73EBA000960F8 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		FB677CCE22B77B1B000960F8 /* bottomBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomBox.swift; sourceTree = "<group>"; };
 		FB80D8A922B60B9300E8FE5F /* swiftForever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftForever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				FB80D8B022B60B9300E8FE5F /* ViewController.swift */,
 				FB677CCC22B73EBA000960F8 /* TableHeaderView.swift */,
+				FB677CCE22B77B1B000960F8 /* bottomBox.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				FB677CCD22B73EBA000960F8 /* TableHeaderView.swift in Sources */,
 				FB677CC922B71E49000960F8 /* UIKit.swift in Sources */,
+				FB677CCF22B77B1B000960F8 /* bottomBox.swift in Sources */,
 				FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */,
 				FB80D8AD22B60B9300E8FE5F /* AppDelegate.swift in Sources */,
 				FB80D8AF22B60B9300E8FE5F /* SceneDelegate.swift in Sources */,
