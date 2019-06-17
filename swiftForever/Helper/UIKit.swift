@@ -35,13 +35,13 @@ extension UITableView{
 }
 
 extension UIView{
-    func add(subview:UIView, createConstraints: (_ view:UIView, _ parent: UIView) -> [NSLayoutConstraint]){
+    open func add(subview:UIView, createConstraints: (_ view:UIView, _ parent: UIView) -> [NSLayoutConstraint]){
         addSubview(subview)
         
         subview.activate(constraints: createConstraints(subview,self))
     }
     
-    func activate(constraints: [NSLayoutConstraint]){
+    open func activate(constraints: [NSLayoutConstraint]){
         translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate(constraints)
     }

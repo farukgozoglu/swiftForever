@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self)
+        tableView.tableHeaderView = TableHeaderView(frame : CGRect(x:0, y:0, width:0, height: 200))
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         return tableView
@@ -37,20 +38,22 @@ class ViewController: UIViewController {
 
         super.viewDidLoad()
         view.backgroundColor = .red
-        view.addSubview(tableview)
-        
-        let constraints = [
-        tableview.topAnchor.constraint(equalTo: view.topAnchor),
-        tableview.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-        tableview.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-        tableview.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
-        
-        NSLayoutConstraint.activate(constraints)
-        
+        tableviewConstruct()
+    
        navigationItem.searchController = searchController
     }
     
-    private func configureConstraints(){
+    
+    private func tableviewConstruct(){
+        view.addSubview(tableview)
+        
+        let constraints = [
+            tableview.topAnchor.constraint(equalTo: view.topAnchor),
+            tableview.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableview.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableview.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
+        
+        NSLayoutConstraint.activate(constraints)
         
     }
 }
