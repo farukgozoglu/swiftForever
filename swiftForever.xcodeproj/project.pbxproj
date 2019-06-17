@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB4F096222B7EA4F0021130D /* TopAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F096122B7EA4F0021130D /* TopAnswers.swift */; };
+		FB4F096422B7EBE30021130D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F096322B7EBE30021130D /* NetworkManager.swift */; };
 		FB677CC922B71E49000960F8 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CC822B71E49000960F8 /* UIKit.swift */; };
 		FB677CCB22B71E6B000960F8 /* UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCA22B71E6B000960F8 /* UIcolor.swift */; };
 		FB677CCD22B73EBA000960F8 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCC22B73EBA000960F8 /* TableHeaderView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB4F096122B7EA4F0021130D /* TopAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnswers.swift; sourceTree = "<group>"; };
+		FB4F096322B7EBE30021130D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FB677CC822B71E49000960F8 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
 		FB677CCA22B71E6B000960F8 /* UIcolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIcolor.swift; sourceTree = "<group>"; };
 		FB677CCC22B73EBA000960F8 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		FB02820322B6EBCE00354F3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FB4F096122B7EA4F0021130D /* TopAnswers.swift */,
+				FB4F096322B7EBE30021130D /* NetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4F096422B7EBE30021130D /* NetworkManager.swift in Sources */,
 				FB677CCD22B73EBA000960F8 /* TableHeaderView.swift in Sources */,
+				FB4F096222B7EA4F0021130D /* TopAnswers.swift in Sources */,
 				FB677CC922B71E49000960F8 /* UIKit.swift in Sources */,
 				FB677CCF22B77B1B000960F8 /* bottomBox.swift in Sources */,
 				FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */,
