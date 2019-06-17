@@ -14,8 +14,15 @@ import UIKit
         
         setupView()
     }
+    
+    private let square : UIView = {
+        let square = UIView(frame:CGRect(x: 10, y: 60, width: 100, height: 100))
+        //square.backgroundColor = .orange
+        return square
+    }()
+    
     private func setupView(){
-        backgroundColor = .red
+        square.backgroundColor = .green
         configureConstraints()
     }
     private func configureConstraints(){

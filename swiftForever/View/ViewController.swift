@@ -12,11 +12,7 @@ class ViewController: UIViewController {
     
     let cellID = "cellID"
     
-    lazy var box : UIView = {
-        let box = bottomBox()
-        box.translatesAutoresizingMaskIntoConstraints = false
-        return box
-    }()
+    
     
     lazy var tableview : UITableView = {
         let tableView = UITableView()
@@ -46,7 +42,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
         tableviewConstruct()
-    view.addSubview(box)
+    
     
        navigationItem.searchController = searchController
     }
