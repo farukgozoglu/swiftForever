@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB677CC922B71E49000960F8 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CC822B71E49000960F8 /* UIKit.swift */; };
+		FB677CCB22B71E6B000960F8 /* UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB677CCA22B71E6B000960F8 /* UIcolor.swift */; };
 		FB80D8AD22B60B9300E8FE5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */; };
 		FB80D8AF22B60B9300E8FE5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */; };
 		FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80D8B022B60B9300E8FE5F /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB677CC822B71E49000960F8 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
+		FB677CCA22B71E6B000960F8 /* UIcolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIcolor.swift; sourceTree = "<group>"; };
 		FB80D8A922B60B9300E8FE5F /* swiftForever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftForever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB02820122B6EBA400354F3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB02820322B6EBCE00354F3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB02820422B6EBEA00354F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB80D8B022B60B9300E8FE5F /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB02820522B6EBF700354F3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */,
+				FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */,
+				FB80D8B522B60B9600E8FE5F /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB02820622B6EC0300354F3D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FB677CC822B71E49000960F8 /* UIKit.swift */,
+				FB677CCA22B71E6B000960F8 /* UIcolor.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		FB80D8A022B60B9300E8FE5F = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +101,12 @@
 		FB80D8AB22B60B9300E8FE5F /* swiftForever */ = {
 			isa = PBXGroup;
 			children = (
-				FB80D8AC22B60B9300E8FE5F /* AppDelegate.swift */,
-				FB80D8AE22B60B9300E8FE5F /* SceneDelegate.swift */,
-				FB80D8B022B60B9300E8FE5F /* ViewController.swift */,
+				FB02820622B6EC0300354F3D /* Helper */,
+				FB02820522B6EBF700354F3D /* Supporting Files */,
+				FB02820422B6EBEA00354F3D /* View */,
+				FB02820322B6EBCE00354F3D /* Model */,
+				FB02820122B6EBA400354F3D /* Controller */,
 				FB80D8B222B60B9300E8FE5F /* Main.storyboard */,
-				FB80D8B522B60B9600E8FE5F /* Assets.xcassets */,
 				FB80D8B722B60B9600E8FE5F /* LaunchScreen.storyboard */,
 				FB80D8BA22B60B9600E8FE5F /* Info.plist */,
 			);
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB677CC922B71E49000960F8 /* UIKit.swift in Sources */,
 				FB80D8B122B60B9300E8FE5F /* ViewController.swift in Sources */,
 				FB80D8AD22B60B9300E8FE5F /* AppDelegate.swift in Sources */,
 				FB80D8AF22B60B9300E8FE5F /* SceneDelegate.swift in Sources */,
+				FB677CCB22B71E6B000960F8 /* UIcolor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

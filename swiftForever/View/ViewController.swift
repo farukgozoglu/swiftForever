@@ -16,16 +16,25 @@ class ViewController: UIViewController {
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UITableViewCell.self)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         return tableView
     }()
+    
+    lazy var searchController : UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.delegate = self
+        return searchController
+    }()
+    
+    var furkan = ["basket", "kosu", "tablet izlemek", "yuzmek", "sucuklu yumurta"]
+    var filteredFurkan = [String]()
+    var isSearching = false
 
     override func viewDidLoad() {
-        
-        var a = 33
-        
+
         super.viewDidLoad()
         view.backgroundColor = .red
         view.addSubview(tableview)
@@ -38,19 +47,42 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activate(constraints)
         
-       
+       navigationItem.searchController = searchController
+    }
+    
+    private func configureConstraints(){
+        
     }
 }
 extension ViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return isSearching ? filteredFurkan.count : furkan.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for:indexPath)
+        let cell = tableView.dequeueReusableCell(UITableViewCell.self, forIndexPath:indexPath)
         
-        cell.textLabel?.text = "furkan"
+        cell.textLabel?.text = isSearching ? filteredFurkan[indexPath.row] : furkan[indexPath.row]
         
         return cell
     }
 }
+
+extension ViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty{
+            isSearching = false
+            tableview.reloadData()
+        }else{
+            isSearching = true
+            filteredFurkan = furkan.filter{$0.lowercased().contains(searchText.lowercased())}
+            tableview.reloadData()
+        }
+        
+        
+    }
+    
+}
+
+
+
