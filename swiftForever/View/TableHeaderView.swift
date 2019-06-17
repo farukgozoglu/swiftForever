@@ -24,7 +24,7 @@ class TableHeaderView : UIView{
     
     private let square : UIView{
         let square = UIView()
-        squ
+        deneme.deneme
     }
     
     override init(frame:CGRect){
