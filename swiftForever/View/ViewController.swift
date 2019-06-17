@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     let cellID = "cellID"
     
-    
+    private let networkManager = NetworkManager()
+    private let path = "/2.2/tags/swift/top-answerers/all_time?site=stackoverflow"
     
     lazy var tableview : UITableView = {
         let tableView = UITableView()
@@ -45,6 +46,16 @@ class ViewController: UIViewController {
     
     
        navigationItem.searchController = searchController
+      
+        networkManager.fetchData(path: path) { (response) in
+            guard let items = response?.items else {return}
+            print("hello")
+            
+            for item in items{
+                print(item.user?.display_name)
+            }
+        }
+        
     }
     
     

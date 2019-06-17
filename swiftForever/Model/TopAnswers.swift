@@ -20,11 +20,11 @@ struct Items : Decodable{
 
 struct User:Decodable{
     let reputation : Int?
-    let userId:String?
-    let userType:Int?
-    let acceptRate:Int?
-    let profileImage:String?
-    let displayName:String?
+    let user_id:Int?
+    let user_type:String?
+    let accept_rate:Int?
+    let profile_image:String?
+    let display_name:String?
     let link : String?
     
 }
