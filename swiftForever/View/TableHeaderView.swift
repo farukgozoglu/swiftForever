@@ -33,8 +33,7 @@ class TableHeaderView : UIView{
         let image = UIImage(named: "furkan.png")
         let imageView = UIImageView(image: image!)
         //imageView.contentMode = .scaleAspectFill
-        imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 50
-        )
+        //imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 50)
         
         
         return imageView
@@ -69,7 +68,7 @@ class TableHeaderView : UIView{
              v.widthAnchor.constraint(equalTo: v.heightAnchor
                 , multiplier: 1.5),
              //v.leadingAnchor.constraint(equalTo: p.leadingAnchor, constant: 100),
-             v.trailingAnchor.constraint(equalTo: p.trailingAnchor, constant: -30)
+             v.trailingAnchor.constraint(equalTo: p.trailingAnchor, constant: -10)
             ]
         }
         
