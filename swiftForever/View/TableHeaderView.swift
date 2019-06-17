@@ -22,9 +22,17 @@ class TableHeaderView : UIView{
         
     }()
     
+    private let square : UIView{
+        let square = UIView()
+        squ
+    }
+    
     override init(frame:CGRect){
         super.init(frame:frame)
         setupView()
+        let square = UIView(frame:CGRect(x: 10, y: 60, width: 100, height: 100))
+        square.backgroundColor = .orange
+        addSubview(square)
     }
     
     private func setupView(){
