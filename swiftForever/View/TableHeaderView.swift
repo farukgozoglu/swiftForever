@@ -28,11 +28,25 @@ class TableHeaderView : UIView{
         return square
     }()
     
+    private let imageFurkan : UIView = {
+        
+        let image = UIImage(named: "furkan.png")
+        let imageView = UIImageView(image: image!)
+        //imageView.contentMode = .scaleAspectFill
+        imageView.frame = CGRect(x: 0, y: 0, width: 30, height: 50
+        )
+        
+        
+        return imageView
+    }()
+    
     override init(frame:CGRect){
         super.init(frame:frame)
         setupView()
         
         addSubview(square)
+        //addSubview(imageFurkan)
+      
     }
     
     private func setupView(){
@@ -47,6 +61,19 @@ class TableHeaderView : UIView{
              v.trailingAnchor.constraint(equalTo: p.trailingAnchor, constant: -30)
              ]
         }
+        
+        add(subview: imageFurkan) { (v, p) -> [NSLayoutConstraint] in
+            [v.centerYAnchor.constraint(equalTo: p.centerYAnchor),
+             //v.topAnchor.constraint(equalTo: p.topAnchor, constant: 50),
+             v.heightAnchor.constraint(equalTo: p.heightAnchor, multiplier: 0.6),
+             v.widthAnchor.constraint(equalTo: v.heightAnchor
+                , multiplier: 1.5),
+             //v.leadingAnchor.constraint(equalTo: p.leadingAnchor, constant: 100),
+             v.trailingAnchor.constraint(equalTo: p.trailingAnchor, constant: -30)
+            ]
+        }
+        
+      
     }
     
     required init?(coder: NSCoder) {
